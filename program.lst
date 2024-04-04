@@ -1,10 +1,10 @@
-					org	00000H
+org	00000H
 				;
-0000				L0000:
-0000 : 31 FA BB 	"1  "		lxi	sp,0BBFAH
-0003 : 3E FF 		"> "		mvi	a,0FFH
-0005				L0005:
-0005 : 32 FF BB 	"2  "		sta	XBBFF
+L0000:
+lxi	sp,0BBFAH
+mvi	a,0FFH
+L0005:
+sta	XBBFF
 0008 : 3E 4C 		">L"		mvi	a,04CH
 000A : 32 FE BB 	"2  "		sta	XBBFE
 000D : 3E 01 		"> "		mvi	a,001H
